@@ -17,3 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
   new leadForm();
   new PopupForm();
 });
+
+document.querySelector('header').setAttribute('style', `border: 1px solid red;`);

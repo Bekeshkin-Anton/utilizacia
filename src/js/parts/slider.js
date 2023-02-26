@@ -47,8 +47,8 @@ export const slider = () => {
     sliderBtnRight.setAttribute('style', `right: 4%`);
   });
   sliderArea.addEventListener('mouseleave', () => {
-    sliderBtnLeft.setAttribute('style', `left: -4%;`);
-    sliderBtnRight.setAttribute('style', `right: -4%`);
+    sliderBtnLeft.setAttribute('style', `left: -10%;`);
+    sliderBtnRight.setAttribute('style', `right: -10%`);
   });
   // slider-nav-btn;
 };

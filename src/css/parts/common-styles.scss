@@ -8,6 +8,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-size: 16px;
@@ -15,12 +16,18 @@ body {
   color: #424242;
   font-family: 'Roboto Flex', sans-serif;
   position: relative;
+  height: fit-content;
+  width: 100%;
+  max-width: 100vw;
   // font-family: 'Montserrat', sans-serif;
   // font-family: 'Open Sans', sans-serif;
 }
 main {
   z-index: 1;
   position: relative;
+}
+section {
+  overflow-x: hidden;
 }
 .content {
   padding: 0 20%;
@@ -151,18 +158,24 @@ main {
 
   // .achievements-content
   &-content {
-    min-height: 20rem;
+    min-height: fit-content;
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    @extend %flex-row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
   }
   // .achievements__elem
 
   &__elem {
     @extend %flex-row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    width: fit-content;
+    max-width: 35%;
     & img {
       margin-right: 1rem;
     }
@@ -173,10 +186,12 @@ main {
   &__subelem {
     font-size: 1rem;
     color: #fff;
-    white-space: nowrap;
+    white-space: wrap;
     text-transform: uppercase;
+    width: fit-content;
     & span {
       font-size: 4rem;
+      width: fit-content;
     }
   }
 }
