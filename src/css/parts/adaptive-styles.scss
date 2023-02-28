@@ -13,6 +13,9 @@
   }
 }
 @media screen and (max-width: 1500px) {
+  .popup {
+    width: 40%;
+  }
   body {
     font-size: 14px;
   }
@@ -72,8 +75,22 @@
   .header-nav {
     padding: 0.7rem 5%;
   }
+  .popup {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 912px) {
+  .popup-wrap {
+    min-height: fit-content;
+    min-width: fit-content;
+  }
+
+  .popup {
+    width: 45%;
+  }
+  .popup__title {
+    font-size: 2rem;
+  }
   body {
     font-size: 18px;
   }
@@ -82,5 +99,186 @@
   }
   .header-title {
     font-size: 14px;
+  }
+  .about-disc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-disc-grid__row_3-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  .about-disc-grid__row_2-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  .grid-list {
+    align-items: flex-start;
+  }
+  .about-advantages-grid-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .achievements .content {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 540px) {
+  .popup {
+    width: 90%;
+  }
+  .popup__title {
+    font-size: 1.2rem;
+  }
+  .close-popup-btn {
+    & img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  body {
+    font-size: 14px;
+  }
+  .wrap-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  .navbar {
+    display: none;
+  }
+  .burger-btn {
+    display: flex;
+  }
+  .slider__title {
+    font-size: 20px;
+  }
+  .slider__subtitle {
+    font-size: 16px;
+  }
+  .section__title {
+    font-size: 20px;
+    padding-bottom: 1rem;
+  }
+  .section__disc {
+    font-size: 16px;
+  }
+  .about-subtitle {
+    font-size: 18px;
+  }
+  .grid-list {
+    & ul {
+      & li {
+        font-size: 16px;
+      }
+    }
+  }
+  .achievements {
+    height: fit-content;
+    padding: 1rem;
+  }
+  .achievements .content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .achievements__subelem span {
+    font-size: 20px;
+  }
+  .achievements__subelem {
+    max-width: 100%;
+  }
+  .achievements__elem img {
+    width: 26px;
+    height: fit-content;
+  }
+  .achievements__elem {
+    max-width: 100%;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .achievements__subelem p {
+    font-size: 14px;
+  }
+  .how-we-work-content p {
+    font-size: 1rem;
+  }
+  .achievements {
+    background: no-repeat center/cover url(/src/img/bg_ci.jpeg);
+  }
+  .how-we-work-img-wrap-1,
+  .how-we-work-img-wrap-2,
+  .how-we-work-img-wrap-3 {
+    & img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .section {
+    padding: 1rem 0;
+  }
+  .how-we-work-cont {
+    margin-top: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+  }
+  .reviews-area__text {
+    font-size: 1rem;
+  }
+  .reviews-area h4 {
+    font-size: 1.2rem;
+  }
+  footer {
+    padding: 1rem 0.5rem;
+  }
+  .slider-nav-btn {
+    display: none;
+  }
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .popup__inputs-wrap {
+    gap: 0.5rem;
+    & p {
+      font-size: 0.7rem;
+    }
+  }
+  .popup__disc {
+    font-size: 0.8rem;
+  }
+  .header-title {
+    font-size: 12px;
+  }
+  .about-disc-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-advantages-grid-content {
+    grid-template-columns: 1fr;
+  }
+  .reviews-nav-arrows__elem {
+    & img {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 300px) {
+  body {
+    font-size: 10px;
+  }
+  .header-title {
+    font-size: 10px;
+  }
+  .header-popup-btn {
+    font-size: 0.5rem;
+    padding: 0.2rem 0.5rem;
   }
 }

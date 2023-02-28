@@ -9,6 +9,7 @@ header {
 .header-contats {
   background-color: #1e88e5;
   padding: 0 15%;
+  z-index: 1;
   // .header-contats__elem
 
   &__elem {
@@ -20,16 +21,20 @@ header {
       & span {
         color: #fff;
         font-weight: 900;
+        & img {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
-}
-.header-contacts-elem-img {
 }
 .header-nav {
   @extend %flex-row;
   justify-content: space-between;
   padding: 0.7rem 15%;
+  z-index: 1;
+  background-color: #fafafa;
   // .header-nav__left
   &__left {
     @extend %flex-row;

@@ -43,12 +43,12 @@ export const slider = () => {
   const sliderBtnLeft = document.querySelector('.slider-nav-btn__left');
   const sliderBtnRight = document.querySelector('.slider-nav-btn__right');
   sliderArea.addEventListener('mouseenter', () => {
-    sliderBtnLeft.setAttribute('style', `left: 4%`);
-    sliderBtnRight.setAttribute('style', `right: 4%`);
+    sliderBtnLeft.setAttribute('style', `left: 4%; opacity: 100%;`);
+    sliderBtnRight.setAttribute('style', `right: 4%; opacity: 100%;`);
   });
   sliderArea.addEventListener('mouseleave', () => {
-    sliderBtnLeft.setAttribute('style', `left: -10%;`);
-    sliderBtnRight.setAttribute('style', `right: -10%`);
+    sliderBtnLeft.setAttribute('style', `left: -10%; opacity: 0%;`);
+    sliderBtnRight.setAttribute('style', `right: -10%; opacity: 0%;`);
   });
   // slider-nav-btn;
 };

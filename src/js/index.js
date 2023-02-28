@@ -7,6 +7,8 @@ import { slider } from './parts/slider';
 import { rewiewsSlider } from './parts/reviews-slider';
 import { phoneInputsMask } from './parts/InputsMask';
 import { leadForm, PopupForm } from './parts/forms';
+import { showBurgerMenu } from './parts/burger';
+import { changeElems } from './parts/adaptive';
 
 document.addEventListener('DOMContentLoaded', () => {
   animate();
@@ -16,6 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
   showPopup();
   new leadForm();
   new PopupForm();
+  showBurgerMenu();
+  changeElems();
 });
-
-document.querySelector('header').setAttribute('style', `border: 1px solid red;`);
